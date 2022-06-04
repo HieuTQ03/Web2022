@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Vite App</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap"
+		rel="stylesheet">
+	<style>
+		* {
+			font-family: 'Heebo', sans-serif;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="app"></div>
+	<script type="module" src="/main.js"></script>
+	<script src="src/index.js"></script>
+	<header>
+		<div class="container max-w-6xl mx-auto mt-5 ">
+			<div>
+				<ul class="flex justify-end space-x-5 font-medium ">
+					<li class="hover:underline"> <a href="">Works</a></li>
+					<li class="hover:underline"> <a href="">Blog</a></li>
+					<li class="hover:underline"> <a href="">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class=" max-w-6xl mx-auto pt-40 grid grid-cols-3 gap-8 ">
+			<div class="col-span-2 ">
+				<p class=" font-bold  text-[44px]">Hi, I am John,<br>
+					Creative Technologist</p>
+				<p class="text-base pt-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet <br> sint.
+					Velit officia consequat duis enim
+					velit mollit. Exercitation veniam <br> consequat sunt nostrud amet.</p>
+			</div>
+			<div class="col-span-1 pl-[40%] "><img src="img/Ellipse 1.png" alt=""
+					class="shadow-2xl shadow-[#EDF7FA] rounded-full "></div>
+			<div>
+				<button
+					class="bg-[#FF6464] text-white px-4 py-2 hover:bg-white hover:text-[#FF6464] border border-[#FF6464]"><a
+						href="">Download Resume</a></button>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="bg-[#EDF7FA]  h-[396px]  mt-16">
+			<div class="max-w-6xl mx-auto flex justify-between py-4">
+				<span class="text[22px] font-normal">Recent posts</span>
+				<span class="text-xs text-[#00A8CC]">View all</span>
+			</div>
+			<div class="flex justify-between max-w-6xl mx-auto">
+			<div class="border bg-white rounded-md w-[400px] h-[295px]  py-4 px-4">
+				<span class="font-bold text-[26px] "><a href=""> Making a design system from scratch</a></span><br>
+				<div class="pt-4">
+				<span class="pr-4 text-[18px] "><a href="">12 Feb 2020</a> </span> | <span class="pl-4 text-[18px]" ><a href="">Design, Pattern</a> </span></div>
+				<p class="text-[16px] pt-4"><a href="">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</a> </p>
+			</div>
+			<div class="border bg-white rounded-md w-[400px] h-[295px]  py-4 px-4">
+				<span class="font-bold text-[26px] "><a href="">Creating pixel perfect icons in Figma</a></span><br>
+				<div class="pt-4">
+				<span class="pr-4 text-[18px] "><a href="">12 Feb 2020</a> </span> | <span class="pl-4 text-[18px]" ><a href="">Figma, Icon Design</a> </span></div>
+				<p class="text-[16px] pt-4"><a href=""> Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</a></p>
+			</div>
+		</div>
+		</div>
+	</section>
+</body>
+
+</html>
