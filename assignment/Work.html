@@ -23,16 +23,26 @@
 
 <body>
     <header>
-		<div class="max-w-8xl container px-12 mt-5 hidden md:block">
-			<div>
-				<ul class="flex justify-end space-x-5 font-medium ">
-					<li class="hover:underline hover:text-[#FF6464]"> <a href="Blog.html">Blog</a></li>
-					<li class="hover:underline text-[#FF6464]"> <a href="Work.html">Works</a></li>
+		<div class="container max-w-8xl px-12  ">
+			<button id="button"><img src="img/menu.png" alt="" class="inline-block md:hidden absolute  right-0  mt-3 mr-3"></button> 
+		
+			<div >
+				<ul id="main-menu"  class="md:flex flex justify-center hidden md:justify-end space-x-5 font-medium md:mt-0 mt-10  ">
+					<li class="hover:underline text-[#FF6464] pl-5 "> <a href="Blog.html">Blog</a></li>
+					<li class="hover:underline hover:text-[#FF6464]"> <a href="Work.html">Works</a></li>
 					<li class="hover:underline hover:text-[#FF6464]"> <a href="workDetail.html">Contact</a></li>
 				</ul>
 			</div>
 		</div>
-		<img src="img/menu.png" alt="" class="md:hidden absolute  right-0   mt-3 mr-3">
+		
+		<script>
+            const button = document.getElementById("button");
+            const menu = document.getElementById("main-menu");
+
+            button.addEventListener("click", function () {
+                menu.classList.toggle("hidden");
+            });
+        </script>
 	</header>
     <section>
 		<div class="max-w-3xl m-auto ">
